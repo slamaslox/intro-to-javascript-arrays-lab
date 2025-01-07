@@ -307,12 +307,14 @@ Complete Exercise 15 in the space below:
 
 let total = 0;
 
+// Approach 1: Using nested loops
 // for (let i = 0; i < numArrays.length; i++) {
 //     for (let j = 0; j < numArrays[i].length; j++) {
 //         total += numArrays[i][j];
 //     }
 // }
 
+// Approach 2: Using `forEach()` with arrow functions
 numArrays.forEach(numArray => {
     numArray.forEach(num => {
         total += num;
@@ -320,7 +322,7 @@ numArrays.forEach(numArray => {
     })
 });
 
-// FYI: flat() method
+// Alternative Approach: Using flat() method for modern JavaScript
 // numArrays.flat().forEach(num => {
 //     total += num; // Accumulate the sum
 // });
